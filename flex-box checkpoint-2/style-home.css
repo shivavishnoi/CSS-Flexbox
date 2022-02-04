@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom css */
+.bb{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header{
+  background-image: url("assets/media/banner.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.icons{
+  text-align: center;
+  padding: 15px;
+}
+.icons a{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  color: rgba(14, 12, 12, 0.602);
+}
+.icons a img{
+  vertical-align: middle;
+}
+header nav{
+  background-color: #ffffff;
+}
+.brand img{
+  width: 90px;
+}
+.brand span{
+  font-size: 26px;
+  color: orangered;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.navigation a{
+  text-decoration: none;
+  margin-left: 12px;
+  padding: 0 12px;
+}
+.navigation{
+  font-size: 16px;
+  padding-right: 12px;
+}
+.active{
+  color: orangered;
+}
+.hero{
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 150px 0;
+}
+.hero hr{
+  margin: 0;
+  color: #ffffff;
+  border: none;
+  border: 1px solid #ffffff;
+}
+.hero h1{
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 800;
+}
+.hero span{
+  font-size: 20px;
+  color: #ffffff;
+  padding: 15px 0;
+  display: inline-block;
+}
+.btn{
+  color: #ffffff;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.our-services{
+  text-align: center;
+  padding-top: 70px;
+}
+.our-services h4{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.our-services p{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.one{
+  background-color: rgb(106, 90, 205);
+  width: 20%;
+  padding: 85px 0;
+}
+.two{
+  background-color: rgb(60, 179, 113);
+  width: 20%;
+  padding: 85px 0;
+}
+.three{
+  background-color: rgb(238, 130, 238);
+  width: 20%;
+  padding: 85px 0;
+}
+.four{
+  background-color: rgb(120, 120, 120);
+  width: 20%;
+  padding: 85px 0;
+}
+.portfolio{
+  flex-wrap: wrap;
+}
+.our-gallery{
+  justify-content: space-around;
+}
+.portfolio img{
+  width: 20%;
+  margin: 10px 2.5%;
+  object-fit: cover;
+}
+.our-portfolio{
+  text-align: center;
+  padding-top: 70px;
+}
+.our-portfolio h4{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.our-portfolio p{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.our-team{
+  text-align: center;
+  padding-top: 70px;
+}
+.our-team h4{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.our-team p{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.team{
+  flex-wrap: wrap;
+}
+.team img{
+  width: 20%;
+  margin: 10px 2.5%;
+  object-fit: cover;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.full-len{
+  width:250px;
+  background-color: slategray;
+  margin: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+}
+.photoshop div{
+  width: 230px;
+  background-color: orangered;
+  padding: 10px 0 10px 5px;
+  vertical-align: middle;
+}
+.html-css div{
+  width: 210px;
+  background-color: orangered;
+  padding: 10px 0 10px 5px;
+  vertical-align: middle;
+}
+.development div{
+  width: 190px;
+  background-color: orangered;
+  padding: 10px 0 10px 5px;
+  vertical-align: middle;
+}
+.marketing div{
+  width: 210px;
+  background-color: orangered;
+  padding: 10px 0 10px 5px;
+  vertical-align: middle;
+}
+.skills h5{
+  font-size: 25px;
+  font-weight: lighter;
+  color: slategray;
+  text-align: center;
+  padding-top: 70px;
+}
+.sub-head{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.skills p{
+  color: slategray;
+  font-size: 16px;
+}
+.contact h4{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 70px;
+}
+.contact p{
+  color: rgb(12, 11, 11);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+iframe{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.register a{
+  color: orangered;
+  justify-content: space-between;
+}
+.register div{
+  align-self: flex-start;
+}
+address {
+  padding: 15px 0;
+}
+.register span{
+  font-size: 16px;
+}
+.form{
+  text-align: right;
+}
+form input{
+  padding: 5px 95px 5px 1px;
+  margin-bottom: 10px;
+}
+.form-btn{
+  border: none;
+  border-radius: 5px;
+  width: 311px;
+  text-align: center;
+  background-color: orangered;
+  padding: 8px;
+  color: #ffffff;
+}
+footer{
+  padding: 25px 0;
+}
+.top-btn a{
+   color: #ffffff;
+   text-decoration: none;
+}
